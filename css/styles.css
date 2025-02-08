@@ -1,0 +1,192 @@
+:root {
+  --hero-image: url(../images/yzf125-wallpaper.jpg);
+  --header-background: #630000;
+  --marketing-black-background: #0A0A0A;
+  --marketing-white-background: #0A0A0A;
+  --footer-background: #202020;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+header {
+  background-color: var(--header-background);
+  padding: 10px 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+#app-title,
+#about,
+#products {
+  color: #fff;
+}
+
+#app-title {
+  font-family: 'bold', serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #ffffff;
+  margin: 0;
+}
+
+#about,
+#products {
+  font-family: "thin";
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+#about:hover,
+#products:hover {
+  color: #ccc;
+}
+
+#about {
+  margin-left: auto;
+}
+
+#hero {
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    var(--hero-image);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#hero-text {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-120%, -50%);
+  color: #fff;
+}
+
+#slogan {
+  text-align: left;
+}
+
+#slogan span {
+  color: #C9A227;
+  font-family: "bold";
+  font-size: 5rem;
+  padding-left: 30px;
+  animation: fade-in 1250ms;
+  animation-fill-mode: forwards;
+
+}
+
+#hero-text p {
+  text-align: left;
+  font-family: "bold";
+  font-size: 3rem;
+  animation: fade-in 1s
+}
+
+.marketing-black,
+.marketing-white {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marketing-black:hover .product,
+.marketing-white:hover .product {
+  animation: anima 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.marketing-black:not(:hover) .product,
+.marketing-white:not(:hover) .product {
+  animation: anima-reverse 1s forwards;
+}
+
+.marketing-white {
+  background-color: #fff;
+}
+
+.marketing-black {
+  background: var(--marketing-black-background);
+}
+
+.white-title,
+.white-description {
+  color: #fff;
+}
+
+.white-title,
+.black-title {
+  padding-bottom: -10px;
+  font-family: "bold";
+  font-size: 50px;
+  color: #ccc;
+}
+
+.white-description,
+.black-description {
+  font-family: "thin";
+  font-size: 32px;
+}
+
+.product {
+  width: 30%;
+  color: #a30000;
+}
+
+.know-more {
+  margin: 40px 0;
+  background-color: #7a0202;
+  border: none;
+  width: 200px;
+  padding: 10px 0;
+  color: #fff;
+  font-family: "cin";
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.marketing-white {
+  background-color: var(--marketing-white-background);
+}
+
+footer {
+  background-color: var(--footer-background);
+  padding: 10px 20px;
+}
+
+footer p {
+  color: #ffff;
+  font-family: "thin";
+  font-size: 14px;
+  text-align: center;
+}
+
+.product1 {
+  width: 40%;
+}
+
+.marketing-black:hover .product1 {
+  animation: anima125 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.marketing-black:not(:hover) .product1 {
+  animation: anima-reverse125 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.euro {
+  color: #ffff;
+  font-weight: 600;
+}

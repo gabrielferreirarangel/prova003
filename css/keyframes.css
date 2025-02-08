@@ -1,0 +1,55 @@
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+      filter: blur(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  
+    100% {
+      opacity: 0;
+      filter: blur(50px);
+    }
+  }
+  
+ @keyframes anima {
+  0%{
+    width: 30%;
+  }
+
+  100% {
+    width: 33%;
+  }
+ }
+
+ @keyframes anima125 {
+  0%{
+    width: 40%;
+  }
+
+  100% {
+    width: 43%;
+  }
+ }
+
+ @keyframes anima-reverse {
+  0% { width: 33%; }
+  100% { width: 30%; }
+}
+
+@keyframes anima-reverse125 {
+  0% { width: 43%; }
+  100% { width: 40%; }
+}
+
+

@@ -1,0 +1,72 @@
+@media screen and (max-width: 600px) {
+    #hero {
+      height: 200px;
+    }
+  
+    #slogan span {
+      font-size: 30px;
+    }
+
+    #hero-text{
+      top: 44%;
+      left: 64%;
+    }
+  
+    #hero-text p {
+      font-size: 30px;
+    }
+
+    #hero-text br{
+      display: none;
+    }
+
+    #slogan span {
+      font-size: 32px;
+      padding-left: 2px;
+      white-space: nowrap;
+      display: flex;
+    }
+    #app-title{
+      font-size: 1rem;
+    }
+
+    #about, #products {
+      font-size: 1rem;
+    }
+  
+    .white-title,
+    .black-title {
+      font-size: 27px;
+      text-align: center;
+    }
+  
+    .white-description,
+    .black-description {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .product {
+      animation: none;
+      animation-fill-mode: none;
+      width: 50%;
+    }
+
+    .marketing-black:not(:hover) .product, .marketing-white:not(:hover) .product{
+      animation: none;
+      animation-fill-mode: none;
+    }
+
+    .marketing-black:not(:hover) .product1{
+      animation: none;
+      animation-fill-mode: none;
+    }
+
+    .product1{
+      width: 90%;
+    }
+
+    .product{
+      width: 73%;
+    }
+  }
